@@ -1,5 +1,3 @@
-import com.example.Deps
-
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -49,21 +47,21 @@ android {
 }
 
 dependencies {
-    implementation(Deps.Main.AndroidX.Core.Main)
-    implementation(Deps.Main.AndroidX.Core.Ktx)
-    implementation(Deps.Main.AndroidX.Lifecycle.RuntimeKtx)
-    implementation(Deps.Main.AndroidX.Activity.Compose)
-    implementation(Deps.Main.AndroidX.Lifecycle.Runtime)
-    implementation(platform(Deps.Main.AndroidX.Compose.Bom))
-    implementation(Deps.Main.AndroidX.Compose.UI.Main)
-    implementation(Deps.Main.AndroidX.Compose.UI.Graphics)
-    implementation(Deps.Main.AndroidX.Compose.UI.ToolingPreview)
-    implementation(Deps.Main.AndroidX.Compose.Material3.Material)
-    testImplementation(Deps.Test.Junit)
-    androidTestImplementation(Deps.Test.AndroidX.Junit)
-    androidTestImplementation(Deps.Test.AndroidX.Espresso)
-    androidTestImplementation(platform(Deps.Main.AndroidX.Compose.Bom))
-    androidTestImplementation(Deps.Test.AndroidX.Compose.UI.Junit)
-    debugImplementation(Deps.Debug.AndroidX.Compose.UI.Tooling)
-    debugImplementation(Deps.Debug.AndroidX.Compose.UI.TestManifest)
+    implementation(libs.androidx.core.main)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.lifecycle.runtime.main)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.compose.ui.main)
+    implementation(libs.androidx.compose.ui.graphics)
+    implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.compose.material3)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.test.junit)
+    androidTestImplementation(libs.androidx.test.espresso)
+    androidTestImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(libs.androidx.compose.ui.test.junit)
+    debugImplementation(libs.androidx.compose.ui.tooling.main)
+    debugImplementation(libs.androidx.compose.ui.test.manifest)
 }
