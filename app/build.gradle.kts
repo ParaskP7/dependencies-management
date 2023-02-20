@@ -1,4 +1,4 @@
-import com.example.Versions
+import com.example.Deps
 
 plugins {
     id("com.android.application")
@@ -49,21 +49,21 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core:${Versions.Main.AndroidX.Core}")
-    implementation("androidx.core:core-ktx:${Versions.Main.AndroidX.Core}")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:${Versions.Main.AndroidX.Lifecycle}")
-    implementation("androidx.activity:activity-compose:${Versions.Main.AndroidX.Activity}")
-    implementation("androidx.lifecycle:lifecycle-runtime:${Versions.Main.AndroidX.Lifecycle}")
-    implementation(platform("androidx.compose:compose-bom:${Versions.Main.AndroidX.Compose}"))
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.ui:ui-graphics")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
-    testImplementation("junit:junit:${Versions.Test.Junit}")
-    androidTestImplementation("androidx.test.ext:junit:${Versions.Test.AndroidX.Junit}")
-    androidTestImplementation("androidx.test.espresso:espresso-core:${Versions.Test.AndroidX.Espresso}")
-    androidTestImplementation(platform("androidx.compose:compose-bom:${Versions.Main.AndroidX.Compose}"))
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
-    debugImplementation("androidx.compose.ui:ui-tooling")
-    debugImplementation("androidx.compose.ui:ui-test-manifest")
+    implementation(Deps.Main.AndroidX.Core.Main)
+    implementation(Deps.Main.AndroidX.Core.Ktx)
+    implementation(Deps.Main.AndroidX.Lifecycle.RuntimeKtx)
+    implementation(Deps.Main.AndroidX.Activity.Compose)
+    implementation(Deps.Main.AndroidX.Lifecycle.Runtime)
+    implementation(platform(Deps.Main.AndroidX.Compose.Bom))
+    implementation(Deps.Main.AndroidX.Compose.UI.Main)
+    implementation(Deps.Main.AndroidX.Compose.UI.Graphics)
+    implementation(Deps.Main.AndroidX.Compose.UI.ToolingPreview)
+    implementation(Deps.Main.AndroidX.Compose.Material3.Material)
+    testImplementation(Deps.Test.Junit)
+    androidTestImplementation(Deps.Test.AndroidX.Junit)
+    androidTestImplementation(Deps.Test.AndroidX.Espresso)
+    androidTestImplementation(platform(Deps.Main.AndroidX.Compose.Bom))
+    androidTestImplementation(Deps.Test.AndroidX.Compose.UI.Junit)
+    debugImplementation(Deps.Debug.AndroidX.Compose.UI.Tooling)
+    debugImplementation(Deps.Debug.AndroidX.Compose.UI.TestManifest)
 }
