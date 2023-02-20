@@ -8,3 +8,11 @@ updates:
       - "Dependencies Updates (Bot)"
     reviewers:
       - "ParaskP7"
+  - package-ecosystem: "gradle"
+    directory: "/app"
+    schedule:
+      interval: "daily"
+    labels:
+      - "Dependencies Updates (Bot)"
+    reviewers:
+      - "ParaskP7"
