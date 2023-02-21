@@ -10,7 +10,7 @@ ext {
     androidxCoreVersion = '1.9.0'
     androidxLifecycleVersion = '2.5.1'
     androidxActivityVersion = '1.5.1'
-    androidxComposeVersion = '2022.10.00'
+    androidxComposeVersion = '2023.01.00'
     // test
     junitVersion = '4.13.2'
     androidxTestJunitVersion = '1.1.5'
